@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Communications>
+  <!--
+        name：通讯的名称，要唯一！
+        assembly：类库名称；
+        type：入口类
+  -->
+
+  <Communication name="FT2上线扫码"
+                 assembly="JasonWfDesigner.BoardSorting.Communication"
+                 dbnum="21"
+                 type="JasonWfDesigner.BoardSorting.Communication.Entrance.BeginningScan">
+  </Communication>
+  <Communication name="NCB2412上线扫码"
+                 assembly="JasonWfDesigner.BoardSorting.Communication"
+                 dbnum="301"
+                 type="JasonWfDesigner.BoardSorting.Communication.Entrance.BeginningScan">
+  </Communication>
+  <Communication name="手动自动扫码"
+                 assembly="JasonWfDesigner.BoardSorting.Communication"
+                 dbnum="305"
+                 type="JasonWfDesigner.BoardSorting.Communication.Entrance.BeginningScan">
+  </Communication>
+
+  <Communication name="D9滚筒流向请求"
+                 assembly="JasonWfDesigner.BoardSorting.Communication"
+                 dbnum="9"
+                 type="JasonWfDesigner.BoardSorting.Communication.Entrance.RequestInFlow">
+  </Communication>
+  <Communication name="3D4滚筒流向请求"
+                 assembly="JasonWfDesigner.BoardSorting.Communication"
+                 dbnum="309"
+                 type="JasonWfDesigner.BoardSorting.Communication.Entrance.RequestInFlow">
+  </Communication>
+
+  <Communication name="FT2入库扫码"
+                 assembly="JasonWfDesigner.BoardSorting.Communication"
+                 dbnum="27"
+                 type="JasonWfDesigner.BoardSorting.Communication.Entrance.InScan">
+  </Communication>
+  <Communication name="BHX500入库扫码"
+                 assembly="JasonWfDesigner.BoardSorting.Communication"
+                 dbnum="31"
+                 type="JasonWfDesigner.BoardSorting.Communication.Entrance.InScan">
+  </Communication>
+
+  <Communication name="机器人任务请求"
+                 assembly="JasonWfDesigner.BoardSorting.Communication"
+                 type="JasonWfDesigner.BoardSorting.Communication.Entrance.RequestRobotTask">
+  </Communication>
+  <Communication name="入库成功"
+                 assembly="JasonWfDesigner.BoardSorting.Communication"
+                 type="JasonWfDesigner.BoardSorting.Communication.Entrance.InFinish">
+  </Communication>
+  <Communication name="出库成功"
+                 assembly="JasonWfDesigner.BoardSorting.Communication"
+                 type="JasonWfDesigner.BoardSorting.Communication.Entrance.OutFinish">
+  </Communication>
+
+  <Communication name="到达出口"
+                 assembly="JasonWfDesigner.BoardSorting.Communication"
+                 type="JasonWfDesigner.BoardSorting.Communication.Entrance.Exit">
+  </Communication>
+
+</Communications>

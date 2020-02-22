@@ -1,0 +1,62 @@
+﻿<Page x:Class="JasonWfDesigner.WPF.Test"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:viewModels="clr-namespace:JasonWfDesigner.WPF.ViewModels"
+      mc:Ignorable="d"
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="Test">
+
+    <!--
+    <Grid ToolTip="{Binding Text}">
+        <Border BorderBrush="#FF000000" Background="{Binding BackgroupColor}" BorderThickness="1"
+                    IsHitTestVisible="False">
+            <TextBlock Text="{Binding Text}" Margin="2,8,2,2"
+                           FontSize="8"
+                           LineHeight="12" LineStackingStrategy="BlockLineHeight" Background="Transparent" />
+        </Border>
+
+        <Label Margin="-10,-10,-100,0" TabIndex="100"
+                   HorizontalAlignment="Left" Content="{Binding Header}"
+                   MinWidth="30"
+                   FontWeight="Bold" FontSize="8" BorderBrush="#FF050505" Background="Cornsilk"
+                   Opacity="0.8"
+                   BorderThickness="1" VerticalAlignment="Top" />
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right"
+                        VerticalAlignment="Bottom">
+            <Button
+                    Margin="5"
+                    Template="{StaticResource infoButtonTemplate}"
+                    Command="{Binding ShowDataChangeWindowCommand}" />
+
+
+        </StackPanel>
+    </Grid>-->
+
+    <Grid x:Name="grid" ToolTip="{Binding Text}">
+        <Border BorderBrush="#FF000000" Background="{Binding BackgroupColor}" BorderThickness="1"
+                IsHitTestVisible="False">
+            <TextBlock Text="{Binding Text}" Margin="2"
+                       FontSize="8"
+                       LineHeight="12" LineStackingStrategy="BlockLineHeight" Background="Transparent" />
+        </Border>
+
+        <Label Margin="0" TabIndex="100"
+               HorizontalAlignment="Left" 
+               FontWeight="Bold" FontSize="10" 
+               Opacity="0.8"
+               BorderThickness="1" VerticalAlignment="Top" 
+               Width="{Binding Width, ElementName=grid}" Height="{Binding Height, ElementName=grid}" >
+            <TextBlock Text="{Binding Header}" TextWrapping="Wrap"></TextBlock>
+        </Label>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Bottom">
+            <Button
+                Margin="5"
+                Template="{StaticResource infoButtonTemplate}"
+                Command="{Binding ShowDataChangeWindowCommand}" />
+        </StackPanel>
+    </Grid>
+</Page>

@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<log4net>
+  <!--不带堆栈信息-->
+  <appender name="rollingFile" type="log4net.Appender.RollingFileAppender,log4net">
+    <param name="File" value="NewLogs/" />
+    <param name="AppendToFile" value="true" />
+    <param name="maxSizeRollBackups" value="10" />
+    <lockingModel type="log4net.Appender.FileAppender+MinimalLock" />
+    <!-- 切割最多文件数 -1表示不限制产生日志文件数-->
+    <param name="MaxSizeRollBackups" value="-1" />
+    <!-- 每个文件的大小限制  -->
+    <param name="MaximumFileSize" value="10MB" />
+    <!-- RollingStyle Composite 综合  Size 按大小  Date 按时间 -->
+    <param name="RollingStyle" value="Composite" />
+    <!-- 固定的日志名称 -->
+    <param name="StaticLogFileName" value="false" />
+    <!-- 日志文件名称  -->
+    <param name="DatePattern" value="'Error-'yyyyMMdd'.txt'" />
+    <!--编码格式-->
+    <Encoding value="UTF-8" />
+    <securityContext type="log4net.Util.WindowsSecurityContext">
+      <credentials value="Process" />
+    </securityContext>
+
+    <!--<filter type="log4net.Filter.LevelRangeFilter">
+            <param name="LevelMin" value="DEBUG" />
+            <param name="LevelMax" value="WARN" />
+        </filter>-->
+    <layout type="NJIS.AppUtility.LogHelper.LogLayout.ReflectionLayout, NJIS.AppUtility">
+      <param name="ConversionPattern"
+             value="【%level】记录时间：%date 线程ID：[%thread] 操作者ID：%property{UserName} 浏览器：%property{Browser} 操作系统：%property{MachineName}%n消息描述：%property{Message}%n 异常：%exception %n ------------------------------------------------------------------------------%n" />
+    </layout>
+  </appender>
+
+  <!--带堆栈信息-->
+  <appender name="rollingFile_NoException" type="log4net.Appender.RollingFileAppender,log4net">
+    <param name="File" value="NewLogs/" />
+    <param name="AppendToFile" value="true" />
+    <param name="maxSizeRollBackups" value="10" />
+    <lockingModel type="log4net.Appender.FileAppender+MinimalLock" />
+    <!-- 切割最多文件数 -1表示不限制产生日志文件数-->
+    <param name="MaxSizeRollBackups" value="-1" />
+    <!-- 每个文件的大小限制  -->
+    <param name="MaximumFileSize" value="10MB" />
+    <!-- RollingStyle Composite 综合  Size 按大小  Date 按时间 -->
+    <param name="RollingStyle" value="Composite" />
+    <!-- 固定的日志名称 -->
+    <param name="StaticLogFileName" value="false" />
+    <param name="DatePattern" value="'Info-'yyyyMMdd'.txt'" />
+    <Encoding value="UTF-8" />
+    <securityContext type="log4net.Util.WindowsSecurityContext">
+      <credentials value="Process" />
+    </securityContext>
+
+    <layout type="NJIS.AppUtility.LogHelper.LogLayout.ReflectionLayout, NJIS.AppUtility">
+      <param name="ConversionPattern"
+             value="【%level】记录时间：%date 线程ID：[%thread]  操作者ID：%property{UserName} 浏览器：%property{Browser} 操作系统：%property{MachineName} Url:%property{Url} %n消息描述：%property{Message} %n ------------------------------------------------------------------------------%n" />
+    </layout>
+  </appender>
+
+  <!--
+  需要在客户端引用以下4个类库，才能确保消息发送到redis，但请注意版本必须在V3以下
+  ServiceStack.Redis
+  ServiceStack.Common
+  ServiceStack.Interfaces
+  ServiceStack.Text
+  -->
+  <!--发送日志到Redis-->
+  <appender name="redisAppender" type="NJIS.AppUtility.LogHelper.Redis.RedisAppender, NJIS.AppUtility">
+    <Host value="10.10.14.54" />
+    <Port value="6379" />
+    <MaxPoolSize value="500" />
+    <QueueId value="ExceptionLog" />
+
+    <layout type="NJIS.AppUtility.LogHelper.Redis.JsonLayout,NJIS.AppUtility">
+      <LogType value="iis_log" />
+      <!--修改为项目名称-->
+      <AppName value="PLC模拟器" />
+    </layout>
+  </appender>
+
+  <!--logger-->
+  <logger name="NJISLog_Error">
+    <level value="ERROR" />
+    <appender-ref ref="rollingFile" />
+    <appender-ref ref="redisAppender" />
+  </logger>
+
+  <logger name="NJISLog_Warn">
+    <level value="WARN" />
+    <appender-ref ref="rollingFile" />
+    <appender-ref ref="redisAppender" />
+  </logger>
+
+  <logger name="NJISLog_Basic">
+    <level value="ALL" />
+    <appender-ref ref="rollingFile_NoException" />
+    <appender-ref ref="redisAppender" />
+  </logger>
+</log4net>
