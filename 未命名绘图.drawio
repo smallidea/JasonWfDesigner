@@ -1,4 +1,4 @@
-<mxfile modified="2023-08-11T08:05:33.418Z" host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.200" etag="fdjY_v4zuYRQ06aTXK-p" version="21.6.8" type="github">
+<mxfile modified="2023-08-11T08:50:20.084Z" host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.200" etag="jB7YSfL_oUMViYozC5l0" version="21.6.8" type="github">
   <diagram id="1JJ-UvxjRfw-XplDersZ" name="Page-1">
     <mxGraphModel dx="1088" dy="-104" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
@@ -100,12 +100,12 @@
         <mxCell id="-1SS42ZIVnQVcuQ_9Ody-97" value="包裹列表" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=default;rotation=-30;" vertex="1" parent="-1SS42ZIVnQVcuQ_9Ody-92">
           <mxGeometry x="54.249999999999886" y="180" width="84" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="-1SS42ZIVnQVcuQ_9Ody-100" value="" style="edgeStyle=isometricEdgeStyle;endArrow=none;html=1;rounded=0;strokeWidth=4;" edge="1" parent="-1SS42ZIVnQVcuQ_9Ody-92">
+        <mxCell id="-1SS42ZIVnQVcuQ_9Ody-100" value="" style="edgeStyle=isometricEdgeStyle;endArrow=none;html=1;rounded=0;strokeWidth=4;shadow=1;" edge="1" parent="-1SS42ZIVnQVcuQ_9Ody-92">
           <mxGeometry width="50" height="100" relative="1" as="geometry">
-            <mxPoint x="159.9999999999999" y="280" as="sourcePoint" />
-            <mxPoint x="139.9999999999999" y="190" as="targetPoint" />
+            <mxPoint x="154.87999999999988" y="280" as="sourcePoint" />
+            <mxPoint x="134.87999999999988" y="190" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="160" y="250" />
+              <mxPoint x="150" y="240" />
             </Array>
           </mxGeometry>
         </mxCell>
