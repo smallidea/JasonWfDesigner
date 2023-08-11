@@ -1,4 +1,4 @@
-<mxfile modified="2023-08-11T12:21:46.986Z" host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.200" etag="vaXf03_CFDL3u8Axp8hU" version="21.6.8" type="github">
+<mxfile modified="2023-08-11T12:22:16.389Z" host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.200" etag="iOqOB8JYMi73CV_P5NDT" version="21.6.8" type="github">
   <diagram id="1JJ-UvxjRfw-XplDersZ" name="Page-1">
     <mxGraphModel dx="1536" dy="194" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
@@ -91,13 +91,13 @@
         <mxCell id="-1SS42ZIVnQVcuQ_9Ody-118" value="设备" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillStyle=auto;gradientColor=none;labelBackgroundColor=default;" vertex="1" parent="1">
           <mxGeometry x="612.0000000000001" y="1295.75" width="84" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="-1SS42ZIVnQVcuQ_9Ody-119" value="工厂 n" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;fontStyle=1;shadow=0;" vertex="1" parent="1">
+        <mxCell id="-1SS42ZIVnQVcuQ_9Ody-119" value="工厂 n" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;fontStyle=1;shadow=0;labelBackgroundColor=default;" vertex="1" parent="1">
           <mxGeometry x="701.83" y="1280" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="-1SS42ZIVnQVcuQ_9Ody-120" value="工厂 1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;fontStyle=1;shadow=0;" vertex="1" parent="1">
+        <mxCell id="-1SS42ZIVnQVcuQ_9Ody-120" value="工厂 1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;fontStyle=1;shadow=0;labelBackgroundColor=default;" vertex="1" parent="1">
           <mxGeometry x="494" y="1405" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="-1SS42ZIVnQVcuQ_9Ody-121" value="阿里云" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;fontStyle=1;shadow=1;" vertex="1" parent="1">
+        <mxCell id="-1SS42ZIVnQVcuQ_9Ody-121" value="阿里云" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;fontStyle=1;shadow=1;labelBackgroundColor=default;" vertex="1" parent="1">
           <mxGeometry x="960.5" y="1375" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="-1SS42ZIVnQVcuQ_9Ody-46" value="" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;strokeWidth=1;align=center;outlineConnect=0;dashed=0;outlineConnect=0;shape=mxgraph.aws3d.application;fillColor=#EBEBEB;strokeColor=#A6A6A6;aspect=fixed;" vertex="1" parent="1">
